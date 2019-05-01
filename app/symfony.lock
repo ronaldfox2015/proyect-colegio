@@ -54,6 +54,9 @@
             "src/Migrations/.gitignore"
         ]
     },
+    "doctrine/event-manager": {
+        "version": "v1.0.0"
+    },
     "doctrine/inflector": {
         "version": "v1.2.0"
     },
@@ -68,6 +71,12 @@
     },
     "doctrine/orm": {
         "version": "v2.5.14"
+    },
+    "doctrine/persistence": {
+        "version": "1.1.1"
+    },
+    "doctrine/reflection": {
+        "version": "v1.0.0"
     },
     "easycorp/easy-log-handler": {
         "version": "1.0",
@@ -95,6 +104,9 @@
     },
     "nikic/php-parser": {
         "version": "v4.2.1"
+    },
+    "ocramius/package-versions": {
+        "version": "1.4.0"
     },
     "ocramius/proxy-manager": {
         "version": "2.0.4"
@@ -165,6 +177,9 @@
             "bin/console",
             "config/bootstrap.php"
         ]
+    },
+    "symfony/contracts": {
+        "version": "v1.0.2"
     },
     "symfony/css-selector": {
         "version": "v3.4.26"
@@ -420,6 +435,9 @@
     },
     "symfony/var-dumper": {
         "version": "v3.4.26"
+    },
+    "symfony/var-exporter": {
+        "version": "v4.2.8"
     },
     "symfony/web-link": {
         "version": "v3.4.26"
