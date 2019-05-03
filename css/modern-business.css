@@ -7,6 +7,25 @@ body {
   padding-top: 56px;
 }
 
+.list-group-item{
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+  color: #22599d;
+}
+.table-thead{
+  color: #f2f2f3;
+  background-color: #22599d;
+}
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #22599d;
+  border-color: #22599d;
+}
 .carousel-item {
   height: 65vh;
   min-height: 300px;
@@ -20,9 +39,27 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+.btn-primary {
+  color: #fff;
+  background-color: #22599d;
+  border-color: #22599d;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #308cca;
+  border-color: #308cca;
+}
+
+button .btn-primary{
+  color: #fff;
+  background-color: #22599d;
+  border-color: #22599d;
+}
 .container-nav{
   margin-top: 13px;
 }
 footer{
   background-color:#225a9d!important;
 }
+
