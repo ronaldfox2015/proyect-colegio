@@ -11,10 +11,10 @@ ENV APP_DIR=/app
 RUN mkdir $APP_DIR
 RUN chmod -R 755 $APP_DIR
 WORKDIR $APP_DIR
-COPY ./nginx.conf /etc/nginx/nginx.conf
+# COPY ./nginx.conf /etc/nginx/nginx.conf
 
-COPY ./entrypoint.sh /init/entrypoint.sh
-RUN chmod +x /init/entrypoint.sh
+# COPY ./entrypoint.sh /init/entrypoint.sh
+# RUN chmod +x /init/entrypoint.sh
 
 ONBUILD ADD app /app/
 # ENTRYPOINT /init/entrypoint.sh

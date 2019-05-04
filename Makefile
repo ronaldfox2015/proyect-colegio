@@ -11,6 +11,7 @@ TAG_DEV						= 0.0.1
 TAG_MYSQL 					= mysql
 MYSQL_USER					?= root
 MYSQL_ROOT_PASSWORD			?= 1234
+MYSQL_DATABASE				?= web_colegio
 USER_ID  					?= $(shell id -u)
 GROUP_ID 					?= $(shell id -g)
 
@@ -42,24 +43,23 @@ build: ## construccion de la imagen: make build
 	docker build -f docker/php/Dockerfile -t $(IMAGE_DEPLOY) docker/php/;
 
 install: ## install de paquetes
-	make tast EXECUTE="install --pure-lockfile --production";
+	make tast EXECUTE="install";
 	sudo chmod -R 777 app/*;
 
 tast: ## installar: make tast EXECUTE=install
 	docker run -it -v "$(PWD)/app:/app" -w "/app" $(IMAGE_DEPLOY) composer $(EXECUTE)
 
 mysql: ## construir mysql
-	docker run -p 3306:3306 --name $(TAG_MYSQL) $(DOCKER_NETWORK) -v $(PWD)/docker/mysql/sql:/docker-entrypoint-initdb.d -e MYSQL_ROOT_PASSWORD=$(MYSQL_ROOT_PASSWORD) -e MYSQL_USER=$(MYSQL_USER) -e MYSQL_DATABASE=reservation -d mysql:5.5;
+	docker run -p 3306:3306 --name $(TAG_MYSQL) -v $(PWD)/docker/mysql/sql:/docker-entrypoint-initdb.d -e MYSQL_ROOT_PASSWORD=$(MYSQL_ROOT_PASSWORD) -e MYSQL_USER=$(MYSQL_USER) -e MYSQL_DATABASE=$(MYSQL_DATABASE) -d mysql:5.5;
 
 start: ## inicializar proyecto: make login
-	docker run -it -p 8000:8000 --name $(PROJECT_NAME)  -v "$(PWD)/app:/app" -w "/app"  $(IMAGE_DEPLOY) php bin/console server:start 0.0.0.0:8000
+	docker run -it -p 8000:8000 -v "$(PWD)/app:/app" -w "/app"  $(IMAGE_DEPLOY) php bin/console server:start 0.0.0.0:8000
 
 ssh: ## inicializar proyecto: make migration
-	docker run -it -v $(NETWORK) "$(PWD)/app:/app" -w "/app" $(IMAGE_DEPLOY) bash
+	docker run -it -v "$(PWD)/app:/app" -w "/app" $(IMAGE_DEPLOY) bash
 
-run-migration: ## inicializar proyecto: make migration
-	make mysql
-	docker run -it -p 3000:3000 --name $(PROJECT_NAME) $(DOCKER_NETWORK)  -v "$(PWD)/app:/app" -w "/app"  $(IMAGE_DEPLOY) yarn run-migration
+stop: ## inicializar proyecto: make migration
+	docker rm $(docker ps -a -q)
 
 up: ## inicialiar mysql y applicacion
 	@IMAGE_DEPLOY=$(IMAGE_DEPLOY) \
