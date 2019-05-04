@@ -1,0 +1,18 @@
+# This file is auto-generated during the composer install
+parameters:
+    locale: 'en'
+    base_url: v1/adecsys
+    aws_default_region: eu-west-1
+    aws_cloudwatchlog_credentials_key: AKIAJULOIFEYAZAWNHBQ
+    aws_cloudwatchlog_credentials_secret: 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
+    aws_sqs_credentials_key: AKIAJULOIFEYAZAWNHBQ
+    aws_sqs_credentials_secret: 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
+    app_log_group: adecsys.dev.aptitus.com
+    app_log_stream: /logs/%app_log_group%/app.log
+    app_log_retention_days: 14
+    adecsys_ws_host: 'http://200.4.199.37'
+    adecsys_ws_queue_name: adecsys-dev4c-api-aptitus-com
+    adecsys_ws_log_group: dev4c.api.aptitus.com
+    adecsys_ws_log_stream: /logs/dev4c.api.aptitus.com/public/tmp/log/adecsys.log
+    adecsys_ws_log_retention_days: 7
+    secret: ThisTokenIsNotSoSecretChangeIt
