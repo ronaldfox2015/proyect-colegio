@@ -5,42 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="186b5494-9820-4e85-9961-ad6bc2bc4039" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/public/info.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Controller/controlFollowUpController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/control-follow-up/edit-report .html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/control-follow-up/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/home/control-follow-up.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/home/course.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/home/registry.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/layouts/modal.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/php-apache/apache/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/php-apache/apache/apache2.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/php-apache/apache/hosts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/php-apache/apache/local.colegio.com.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/proyect-colegio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/proyect-colegio.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/parameters.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/parameters.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/static/img/logo-texto.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/static/img/logo-texto.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/AppController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/layouts/footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/footer.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/layouts/head.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/head.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/controlFollowUpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/controlFollowUpController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/control-follow-up/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/control-follow-up/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/layouts/main.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/main.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/layouts/navigation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/navigation.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/aws/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/aws/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/sql/dadabase.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docker/mysql/sql/dadabase.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/php/entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php/entrypoint.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/php/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/php/www.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php/www.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get-docker.sh" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,21 +21,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/Controller/AppController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="29" />
-              <folding>
-                <element signature="e#35#81#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/Controller/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
+            <state relative-caret-position="645">
               <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
@@ -77,17 +32,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/Controller/controlFollowUpController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="50" />
+            <state relative-caret-position="258">
+              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/control-follow-up/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="102" column="56" selection-start-line="102" selection-start-column="56" selection-end-line="102" selection-end-column="56" />
+            <state relative-caret-position="135">
+              <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
               <folding>
                 <element signature="e#4500#4511#0#Twig" expanded="true" />
                 <element signature="e#5148#5159#0#Twig" expanded="true" />
@@ -97,19 +52,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/control-follow-up/edit-report .html.twig">
+        <entry file="file://$PROJECT_DIR$/app/templates/control-follow-up/edit-report.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="742">
-              <caret line="96" column="20" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
+            <state relative-caret-position="172">
+              <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="360" column="16" selection-end-line="611" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/templates/layouts/main.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -161,6 +125,7 @@
       <find>DocumentRoot</find>
       <find>APACHE_RUN_DIR</find>
       <find>apache</find>
+      <find>edit-report.html.twig</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app/templates/control-follow-up</dir>
@@ -190,11 +155,11 @@
         <option value="$PROJECT_DIR$/app/templates/home/control-follow-up.html.twig" />
         <option value="$PROJECT_DIR$/app/templates/layouts/navigation.html.twig" />
         <option value="$PROJECT_DIR$/app/templates/layouts/modal.html.twig" />
-        <option value="$PROJECT_DIR$/app/templates/layouts/main.html.twig" />
         <option value="$PROJECT_DIR$/app/templates/control-follow-up/edit report .html.twig" />
-        <option value="$PROJECT_DIR$/app/src/Controller/controlFollowUpController.php" />
         <option value="$PROJECT_DIR$/app/src/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/app/templates/control-follow-up/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/src/Controller/controlFollowUpController.php" />
+        <option value="$PROJECT_DIR$/app/templates/layouts/main.html.twig" />
       </list>
     </option>
   </component>
@@ -445,12 +410,12 @@
       <updated>1556985448319</updated>
       <workItem from="1556985449386" duration="4886000" />
       <workItem from="1557018314670" duration="11604000" />
-      <workItem from="1557030224116" duration="6011000" />
+      <workItem from="1557030224116" duration="8716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22501000" />
+    <option name="totallyTimeSpent" value="25206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -469,7 +434,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49960095" weight="0.27687296" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49960095" visible="true" weight="0.27687296" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50039905" side_tool="true" weight="0.27687296" />
       <window_info anchor="right" id="make" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -698,13 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/layouts/main.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/layouts/navigation.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -714,27 +672,6 @@
             <element signature="e#1259#1280#0#Twig" expanded="true" />
             <element signature="e#1415#1421#0#Twig" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/control-follow-up/edit-report .html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="96" column="20" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/Controller/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/Controller/controlFollowUpController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -748,14 +685,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/Controller/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="360" column="16" selection-end-line="611" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/control-follow-up/edit-report.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/control-follow-up/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="102" column="56" selection-start-line="102" selection-start-column="56" selection-end-line="102" selection-end-column="56" />
+        <state relative-caret-position="135">
+          <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
           <folding>
             <element signature="e#4500#4511#0#Twig" expanded="true" />
             <element signature="e#5148#5159#0#Twig" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/Controller/controlFollowUpController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/layouts/main.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
