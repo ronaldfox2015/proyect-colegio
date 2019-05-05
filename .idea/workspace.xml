@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="186b5494-9820-4e85-9961-ad6bc2bc4039" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/Controller/controlFollowUpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/controlFollowUpController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/learningWorkshopController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/learning-workshop/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/control-follow-up/edit-report.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/control-follow-up/edit-report.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/control-follow-up/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/control-follow-up/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/layouts/main.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/main.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,32 +22,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/Controller/HomeController.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/templates/learning-workshop/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/Controller/controlFollowUpController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/control-follow-up/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
+            <state relative-caret-position="45">
+              <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
               <folding>
-                <element signature="e#4500#4511#0#Twig" expanded="true" />
-                <element signature="e#5148#5159#0#Twig" expanded="true" />
+                <element signature="e#370#391#0#Twig" expanded="true" />
+                <element signature="e#467#484#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,66 +38,57 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/control-follow-up/edit-report.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+            <state relative-caret-position="-433">
+              <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
+        <entry file="file://$PROJECT_DIR$/app/templates/control-follow-up/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="360" column="16" selection-end-line="611" />
+            <state relative-caret-position="270">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+              <folding>
+                <element signature="e#370#391#0#Twig" expanded="true" />
+                <element signature="e#484#501#0#Twig" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/templates/layouts/main.html.twig">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/layouts/modal.html.twig">
+        <entry file="file://$PROJECT_DIR$/app/src/Controller/learningWorkshopController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-              <folding>
-                <element signature="e#521#528#1#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/layouts/head.html.twig">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/home/control-follow-up.html.twig">
+        <entry file="file://$PROJECT_DIR$/app/src/Controller/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" selection-start-column="27" selection-end-column="27" />
+            <state relative-caret-position="-73">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/layouts/navigation.html.twig">
+        <entry file="file://$PROJECT_DIR$/app/src/Controller/controlFollowUpController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="80" />
-              <folding>
-                <element signature="e#1116#1124#0#Twig" expanded="true" />
-                <element signature="e#1259#1280#0#Twig" expanded="true" />
-                <element signature="e#1415#1421#0#Twig" expanded="true" />
-              </folding>
+            <state relative-caret-position="-177">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -126,6 +101,7 @@
       <find>APACHE_RUN_DIR</find>
       <find>apache</find>
       <find>edit-report.html.twig</find>
+      <find>learning-workshop</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app/templates/control-follow-up</dir>
@@ -157,9 +133,12 @@
         <option value="$PROJECT_DIR$/app/templates/layouts/modal.html.twig" />
         <option value="$PROJECT_DIR$/app/templates/control-follow-up/edit report .html.twig" />
         <option value="$PROJECT_DIR$/app/src/Controller/HomeController.php" />
-        <option value="$PROJECT_DIR$/app/templates/control-follow-up/index.html.twig" />
         <option value="$PROJECT_DIR$/app/src/Controller/controlFollowUpController.php" />
         <option value="$PROJECT_DIR$/app/templates/layouts/main.html.twig" />
+        <option value="$PROJECT_DIR$/app/templates/control-follow-up/edit-report.html.twig" />
+        <option value="$PROJECT_DIR$/app/templates/control-follow-up/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/src/Controller/learningWorkshopController.php" />
+        <option value="$PROJECT_DIR$/app/templates/learning-workshop/index.html.twig" />
       </list>
     </option>
   </component>
@@ -332,7 +311,7 @@
               <item name="proyect-colegio" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="learning-workshop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="proyect-colegio" type="b2602c69:ProjectViewProjectNode" />
@@ -361,7 +340,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates/layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates/learning-workshop" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -369,6 +348,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/templates/learning-workshop" />
       <recent name="$PROJECT_DIR$/app/templates/layouts" />
       <recent name="$PROJECT_DIR$/app/templates/control-follow-up" />
       <recent name="$PROJECT_DIR$/app/public" />
@@ -410,12 +390,12 @@
       <updated>1556985448319</updated>
       <workItem from="1556985449386" duration="4886000" />
       <workItem from="1557018314670" duration="11604000" />
-      <workItem from="1557030224116" duration="8716000" />
+      <workItem from="1557030224116" duration="10928000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25206000" />
+    <option name="totallyTimeSpent" value="27418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -447,13 +427,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -685,13 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/Controller/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
@@ -699,35 +665,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/control-follow-up/edit-report.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/templates/layouts/main.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/control-follow-up/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/templates/control-follow-up/edit-report.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
-          <folding>
-            <element signature="e#4500#4511#0#Twig" expanded="true" />
-            <element signature="e#5148#5159#0#Twig" expanded="true" />
-          </folding>
+        <state relative-caret-position="-433">
+          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/Controller/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-73">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/Controller/controlFollowUpController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        <state relative-caret-position="-177">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/layouts/main.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/templates/control-follow-up/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="270">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="e#370#391#0#Twig" expanded="true" />
+            <element signature="e#484#501#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/Controller/learningWorkshopController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/learning-workshop/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+          <folding>
+            <element signature="e#370#391#0#Twig" expanded="true" />
+            <element signature="e#467#484#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
