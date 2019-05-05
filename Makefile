@@ -2,7 +2,7 @@
 
 ## GENERAL ##
 OWNER 						= web
-SERVICE_NAME 				= school
+SERVICE_NAME 				= school-php-apache
 VERSION         			= v1
 PROVIDER					= ronaldgcr
 DOCKER_NETWORK				?= --network api_reserva 
@@ -40,7 +40,7 @@ NETWORD					    ?= orbis-training-$(PROJECT_NAME)
 PATH_CORE					?= $(PWD)/core
 
 build: ## construccion de la imagen: make build
-	docker build -f docker/php/Dockerfile -t $(IMAGE_DEPLOY) docker/php/;
+	docker build -f docker/php-apache/Dockerfile -t $(IMAGE_DEPLOY) docker/php-apache/;
 
 install: ## install de paquetes
 	make tast EXECUTE="install";
@@ -53,19 +53,27 @@ mysql: ## construir mysql
 	docker run -p 3306:3306 --name $(TAG_MYSQL) -v $(PWD)/docker/mysql/sql:/docker-entrypoint-initdb.d -e MYSQL_ROOT_PASSWORD=$(MYSQL_ROOT_PASSWORD) -e MYSQL_USER=$(MYSQL_USER) -e MYSQL_DATABASE=$(MYSQL_DATABASE) -d mysql:5.5;
 
 start: ## inicializar proyecto: make login
-	docker run -it -p 8000:8000 -v "$(PWD)/app:/app" -w "/app"  $(IMAGE_DEPLOY) php bin/console server:start 0.0.0.0:8000
+	docker run -it -p 80:80 -v "$(PWD)/app:/app" -w "/app"  $(IMAGE_DEPLOY) php bin/console server:start 0.0.0.0:8000
 
-ssh: ## inicializar proyecto: make migration
+ssh: ## inicializar proyecto: make ssh
 	docker run -it -v "$(PWD)/app:/app" -w "/app" $(IMAGE_DEPLOY) bash
 
-stop: ## inicializar proyecto: make migration
+console: ## inicializar proyecto: make console
+	docker-compose exec backend bash
+
+stop: ## inicializar proyecto: make stop
 	docker rm $(docker ps -a -q)
 
 up: ## inicialiar mysql y applicacion
+	make localhost;
 	@IMAGE_DEPLOY=$(IMAGE_DEPLOY) \
 	PROJECT_NAME=$(PROJECT_NAME) \
 	VIRTUAL_HOST=$(VIRTUAL_HOST) \
 	docker-compose -p $(PROJECT_NAME) up
+
+localhost: ## inicialiar mysql y applicacion
+	sudo cp $(PWD)/docker/php-apache/apache/hosts /etc/hosts;
+	echo "local.webcolegio.com";
 
 console: ## inicialiar mysql y applicacion
 	@IMAGE_DEPLOY=$(IMAGE_DEPLOY) \

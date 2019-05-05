@@ -1,0 +1,97 @@
+<!-- Page Content -->
+<div class="container">
+    <div class="card container-nav">
+        <form >
+            <div class="card-body">
+                GESTIÓN DE INFORME ACADÉMICO
+                <div class="form-group">
+                    <label for="inputAddress">Informe</label>
+                    <input type="text" class="form-control form-control-lg" id="report" name="report">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Del</label>
+                        <input type="text" class="form-control form-control-lg" id="teacher" name="teacher">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Fecha</label>
+                        <input id="date" name="date" class="form-control form-control-lg datepicker" width="276" />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Seccion</label>
+                        <select id="section" name="section" class="form-control form-control-lg">
+                            <option>Large select</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Curso</label>
+                        <select id="course" name="course" class="form-control form-control-lg">
+                            <option>Large select</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-hover">
+                    <thead class="table-thead">
+                    <tr>
+                        <th scope="col">Nombre (Estudiante)</th>
+                        <th scope="col">Nota 1</th>
+                        <th scope="col">Nota 2</th>
+                        <th scope="col">Temas a reforzar</th>
+                        <th scope="col">Seleccionar</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Mark</th>
+                        <td>B</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>                                 <div class="text-center">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Mark</th>
+                        <td>C</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>                                 <div class="text-center">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Larry the Bird</th>
+                        <td >B</td>
+                        <td>@twitter</td>
+                        <td>@fat</td>
+                        <td>                                 <div class="text-center">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div></td>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card-body">OBSERVACIONES
+                <div class="card"></div>
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="card-body">
+                <button type="submit" class="btn btn-primary" >GRABAR INFORME</button>
+                <button type="submit" class="btn btn-primary" >IMPRIMIR</button>
+                <button type="submit" class="btn btn-primary">SALIR</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+<!-- /.container -->

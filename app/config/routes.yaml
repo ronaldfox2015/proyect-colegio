@@ -7,3 +7,7 @@
 app_home:
     path: /
     controller: App\Controller\HomeController::index
+
+# app_contact:
+#    path: /contact
+#    controller: App\Controller\HomeController::contact

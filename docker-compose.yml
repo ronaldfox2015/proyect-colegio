@@ -1,0 +1,22 @@
+version: '2'
+services:
+
+  backend:
+    image: $IMAGE_DEPLOY
+    ports:
+      - 80:80    
+    container_name: $PROJECT_NAME
+    volumes:
+      - ./app/:/var/www/html/
+#      - ./docker/php-apache/apache/:/etc/apache2/
+
+  mysql:
+      image: mysql:5.5
+      environment:
+        MYSQL_ROOT_PASSWORD: 1234
+        MYSQL_DATABASE: reservation
+      ports:
+        - 3306:3306
+      volumes:
+        - ./docker/mysql/sql:/docker-entrypoint-initdb.d
+      command: mysqld --sql_mode=""
