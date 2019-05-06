@@ -1,0 +1,47 @@
+
+
+
+<div id="login"  class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button id="btn-login" type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+   <script language = "javascript">  
+      $(document).ready(function(){   
+         $("#btn-login").on("click", function(event){  
+            $.ajax({  
+               url:        '/student/ajax',  
+               type:       'POST',   
+               dataType:   'json',  
+               async:      true,  
+               
+               success: function(data, status) {  
+                  alert('se grabo correctamentea')  
+               },  
+               error : function(xhr, textStatus, errorThrown) {  
+                  alert('Ajax request failed.');  
+               }  
+            });  
+         });  
+      });  
+   </script> 

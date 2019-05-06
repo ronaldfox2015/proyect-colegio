@@ -1,4 +1,5 @@
 FROM php:7.2-apache
+RUN apt-get update
 ENV APP_DIR=/app
 RUN mkdir $APP_DIR
 #RUN mkdir $APP_DIR/public
@@ -15,7 +16,7 @@ COPY ./apache/hosts /etc/hosts
 COPY ./apache/.htaccess /var/www/html/public/
 
 WORKDIR $APP_DIR
-RUN apt-get update && apt-get install -y apt-utils && apt-get install -y curl && apt-get install -y git
+RUN apt-get install -y curl && apt-get install -y git
 RUN apt-get install -y \
     zip
 RUN curl -sS https://getcomposer.org/installer | php
