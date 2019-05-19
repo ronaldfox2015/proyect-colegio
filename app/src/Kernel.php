@@ -37,6 +37,12 @@ class Kernel extends BaseKernel
 
     protected function configureContainer(ContainerBuilder $container, LoaderInterface $loader)
     {
+        $DUMP_SERVER = getenv('DUMP_SERVER');
+        if (strtolower($DUMP_SERVER) === 'null' || $DUMP_SERVER === '~') {
+            $DUMP_SERVER = null;
+        }
+        $container->setParameter('DUMP_SERVER', $DUMP_SERVER);
+
         $container->addResource(new FileResource($this->getProjectDir().'/config/bundles.php'));
         // Feel free to remove the "container.autowiring.strict_mode" parameter
         // if you are using symfony/dependency-injection 4.0+ as it's the default behavior

@@ -24,6 +24,9 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/easycorp/easy-log-handler" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/egulias/email-validator" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/fig/link-util" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/jdorn/sql-formatter" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/nikic/php-parser" />
@@ -34,9 +37,11 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpdocumentor/type-resolver" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/cache" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/http-message" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/link" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/ralouphie/getallheaders" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/sensio/framework-extra-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/swiftmailer/swiftmailer" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/apache-pack" />

@@ -3,12 +3,14 @@
 namespace App\Controller;
 
 use Symfony\Component\Routing\Annotation\Route;
+use App\Service\User\Auth;
 
 class HomeController extends AppController
 {
-    public function __construct()
+    public $serviceAuth;
+    public function __construct(Auth $service)
     {
-
+        $this->serviceAuth = $service;
     }
 
     /**
