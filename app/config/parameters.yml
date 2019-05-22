@@ -17,3 +17,9 @@ parameters:
     adecsys_ws_log_retention_days: 7
     secret: ThisTokenIsNotSoSecretChangeIt
     ws_services: https://api.aptitus.com/
+    servicio:
+        base_uri: https://api.aptitus.com
+        headers:
+            Content-Type: 'application/json'
+            Accept: "application/json"
+        timeout: 5

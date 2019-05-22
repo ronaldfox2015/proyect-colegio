@@ -20,6 +20,7 @@ class HomeController extends AppController
      */
     public function index()
     {
+        dump($this->serviceAuth->apititus());exit;
         return $this->renderApp('home/index.html.twig',[]);
     }
 

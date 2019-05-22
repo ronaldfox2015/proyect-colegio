@@ -7,16 +7,25 @@ use GuzzleHttp\Client;
 
 class Auth extends Client
 {
-    public function __construct($urlService )
+    public function __construct($urlService)
     {
-//        parent::__construct($config);
-        dump($urlService);
-        //parent::__construct($config);
+        parent::__construct($urlService);
     }
 
-    public function calculate()
+    public function apititus()
     {
-        // TODO: Implement calculate() method.
-        return 1;
+        $result = $this->get('/');
+
+        return json_decode($result->getBody()->getContents(), true);
+    }
+
+    public function login($user, $password)
+    {
+        $result = $this->post('/user/login', [
+            'user' => $user,
+            'paswor' => $password
+        ]);
+
+        return json_decode($result->getBody()->getContents(), true);
     }
 }
