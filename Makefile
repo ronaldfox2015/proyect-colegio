@@ -46,6 +46,10 @@ install: ## install de paquetes
 	make tast EXECUTE="install";
 	sudo chmod -R 777 app/*;
 
+install-web-api:
+	make install;
+	make install-api;
+
 install-api:
 	docker run -it -v "$(PWD)/api-proyect-colegio/app:/app" -w "/app" ronaldgcr/api-dev-node-colegio:0.0.1 yarn install
 	sudo chmod -R 777 $(PWD)/api-proyect-colegio/app/*;
