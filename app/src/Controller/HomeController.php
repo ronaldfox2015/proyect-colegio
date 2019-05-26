@@ -18,6 +18,7 @@ class HomeController extends AppController
         $this->serviceAuth = $service;
         $this->cdn = $cdn;
         $this->session = $session;
+        parent::__construct();
     }
 
     /**
@@ -58,7 +59,7 @@ class HomeController extends AppController
     public function teacher()
     {
         $parameters['cdn'] = $this->cdn;
-        $teacher = $this->session->get('teacher');
+        $teacher = $this->session->get('auth');
         return $this->renderAppSchool('home/teacher.html.twig', $parameters);
 
     }

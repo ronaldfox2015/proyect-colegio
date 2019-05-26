@@ -2,6 +2,7 @@
 
 namespace App\Service\User;
 
+use Exception;
 use GuzzleHttp\Client;
 
 class Auth extends Client
@@ -18,13 +19,21 @@ class Auth extends Client
         return json_decode($result->getBody()->getContents(), true);
     }
 
-    public function login($user, $password)
+    public function login($user, $password, $rol)
     {
-        $result = $this->post('/user/login', [
-            'user' => $user,
-            'paswor' => $password
-        ]);
+        try{
+            $result = $this->post('/v1/user/login', [
+                'json' => [
+                    'user' => $user,
+                    'password' => $password,
+                    'rol' => $rol
+                ]
+            ]);
+            return json_decode($result->getBody()->getContents(), true);
 
-        return json_decode($result->getBody()->getContents(), true);
+        } catch (Exception $exception) {
+            return false;
+        }
+        return false;
     }
 }

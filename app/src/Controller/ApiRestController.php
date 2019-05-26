@@ -34,13 +34,17 @@ class ApiRestController extends AbstractController
     public function login(Request $request)
     {
         $user = $request->get('user', null);
-        $pasword = $request->get('pasword',null);
-        $rol = $request->get('rol',null);
-       // $servicio = $this->serviceAuth->login($request['user'],$request['password']);
-        $this->session->set('teacher', [
-            'user' => $user
-        ]);
-        return new JsonResponse($rol);
+        $pasword = $request->get('pasword', null);
+        $rol = $request->get('rol', null);
+        $servicio = $this->serviceAuth->login($user, $pasword, $rol);
+        if ($servicio) {
+            $this->session->set('auth', [
+                'user' => $servicio
+            ]);
+        }
+        dump($servicio);
+
+        return new JsonResponse($request);
 
     }
 

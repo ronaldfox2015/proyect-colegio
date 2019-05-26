@@ -60,6 +60,7 @@ install-submodule: ## install de paquetes
 delete-submodule:
 	git submodule deinit api-proyect-colegio;
 	git rm -r api-proyect-colegio;
+
 tast: ## installar: make tast EXECUTE=install
 	docker run -it -v "$(PWD)/app:/app" -w "/app" $(IMAGE_DEPLOY) composer $(EXECUTE)
 

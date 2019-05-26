@@ -17,7 +17,7 @@ parameters:
     secret: ThisTokenIsNotSoSecretChangeIt
     ws_services: https://api.aptitus.com/
     servicio:
-        base_uri: https://api.aptitus.com
+        base_uri: apirest:3000
         headers:
             Content-Type: 'application/json'
             Accept: "application/json"

@@ -14,7 +14,7 @@ services:
       image: mysql:5.5
       environment:
         MYSQL_ROOT_PASSWORD: 1234
-        MYSQL_DATABASE: reservation
+        MYSQL_DATABASE: bd_iepmae
       ports:
         - 3306:3306
       volumes:
