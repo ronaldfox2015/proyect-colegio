@@ -6,12 +6,12 @@ namespace App\Controller;
 use App\Library\View\Cdn;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 
 class AppController extends AbstractController
 {
     private $cdn;
-
     public function __construct()
     {
     }

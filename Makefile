@@ -55,11 +55,11 @@ install-api:
 	sudo chmod -R 777 $(PWD)/api-proyect-colegio/app/*;
 
 install-submodule: ## install de paquetes
-	cd api-proyect-colegio/
-	make tast EXECUTE="install";
-	cd ../
-	sudo chmod -R 777 app/*;
+	git submodule add git@github.com:ronaldfox2015/api-proyect-colegio.git;
 
+delete-submodule:
+	git submodule deinit api-proyect-colegio;
+	git rm -r api-proyect-colegio;
 tast: ## installar: make tast EXECUTE=install
 	docker run -it -v "$(PWD)/app:/app" -w "/app" $(IMAGE_DEPLOY) composer $(EXECUTE)
 

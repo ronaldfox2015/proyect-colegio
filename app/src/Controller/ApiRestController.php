@@ -7,6 +7,7 @@ use App\Service\User\Auth;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Component\HttpFoundation\Request;
@@ -14,9 +15,13 @@ use Symfony\Component\HttpFoundation\Request;
 class ApiRestController extends AbstractController
 {
     public $serviceAuth;
-    public function __construct(Auth $service)
+    private $session;
+
+    public function __construct(Auth $service, SessionInterface $session)
     {
         $this->serviceAuth = $service;
+        $this->session = $session;
+
     }
 
     /**
@@ -32,6 +37,9 @@ class ApiRestController extends AbstractController
         $pasword = $request->get('pasword',null);
         $rol = $request->get('rol',null);
        // $servicio = $this->serviceAuth->login($request['user'],$request['password']);
+        $this->session->set('teacher', [
+            'user' => $user
+        ]);
         return new JsonResponse($rol);
 
     }

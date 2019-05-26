@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Library\View\Cdn;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Service\User\Auth;
 
@@ -10,11 +11,13 @@ class HomeController extends AppController
 {
     public $serviceAuth;
     private $cdn;
+    private $session;
 
-    public function __construct(Auth $service,Cdn $cdn)
+    public function __construct(Auth $service,Cdn $cdn, SessionInterface $session)
     {
         $this->serviceAuth = $service;
         $this->cdn = $cdn;
+        $this->session = $session;
     }
 
     /**
@@ -55,6 +58,7 @@ class HomeController extends AppController
     public function teacher()
     {
         $parameters['cdn'] = $this->cdn;
+        $teacher = $this->session->get('teacher');
         return $this->renderAppSchool('home/teacher.html.twig', $parameters);
 
     }
