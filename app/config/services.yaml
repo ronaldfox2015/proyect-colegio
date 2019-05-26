@@ -48,3 +48,9 @@ services:
         autowire: true
 
 #    App\Repository\User\AuthRepository: ['@service.auth']
+
+
+    App\Library\View\Cdn:
+        class:  App\Library\View\Cdn
+        arguments: ['%base_url%']
+        autowire: true

@@ -46,6 +46,16 @@ install: ## install de paquetes
 	make tast EXECUTE="install";
 	sudo chmod -R 777 app/*;
 
+install-api:
+	docker run -it -v "$(PWD)/api-proyect-colegio/app:/app" -w "/app" ronaldgcr/api-dev-node-colegio:0.0.1 yarn install
+	sudo chmod -R 777 $(PWD)/api-proyect-colegio/app/*;
+
+install-submodule: ## install de paquetes
+	cd api-proyect-colegio/
+	make tast EXECUTE="install";
+	cd ../
+	sudo chmod -R 777 app/*;
+
 tast: ## installar: make tast EXECUTE=install
 	docker run -it -v "$(PWD)/app:/app" -w "/app" $(IMAGE_DEPLOY) composer $(EXECUTE)
 

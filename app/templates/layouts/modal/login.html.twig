@@ -26,22 +26,3 @@
     </div>
   </div>
 </div>
-   <script language = "javascript">  
-      $(document).ready(function(){   
-         $("#btn-login").on("click", function(event){  
-            $.ajax({  
-               url:        '/student/ajax',  
-               type:       'POST',   
-               dataType:   'json',  
-               async:      true,  
-               
-               success: function(data, status) {  
-                  alert('se grabo correctamentea')  
-               },  
-               error : function(xhr, textStatus, errorThrown) {  
-                  alert('Ajax request failed.');  
-               }  
-            });  
-         });  
-      });  
-   </script> 

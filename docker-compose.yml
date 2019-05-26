@@ -18,5 +18,12 @@ services:
       ports:
         - 3306:3306
       volumes:
-        - ./docker/mysql/sql:/docker-entrypoint-initdb.d
+        - ./api-proyect-colegio/docker/mysql/sql:/docker-entrypoint-initdb.d
       command: mysqld --sql_mode=""
+  apirest:
+    image: ronaldgcr/api-dev-node-colegio:0.0.1
+    ports:
+      - 8080:3000
+    volumes:
+      - ./api-proyect-colegio/app/:/app
+    command: yarn start

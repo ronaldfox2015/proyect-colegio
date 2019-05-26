@@ -1,7 +1,6 @@
 # This file is auto-generated during the composer install
 parameters:
     locale: 'en'
-    base_url: v1/adecsys
     aws_default_region: eu-west-1
     aws_cloudwatchlog_credentials_key: AKIAJULOIFEYAZAWNHBQ
     aws_cloudwatchlog_credentials_secret: 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
@@ -23,3 +22,5 @@ parameters:
             Content-Type: 'application/json'
             Accept: "application/json"
         timeout: 5
+    base_url: http://local.webcolegio.com/
+    version: 1

@@ -2,15 +2,19 @@
 
 namespace App\Controller;
 
+use App\Library\View\Cdn;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Service\User\Auth;
 
 class HomeController extends AppController
 {
     public $serviceAuth;
-    public function __construct(Auth $service)
+    private $cdn;
+
+    public function __construct(Auth $service,Cdn $cdn)
     {
         $this->serviceAuth = $service;
+        $this->cdn = $cdn;
     }
 
     /**
@@ -20,7 +24,6 @@ class HomeController extends AppController
      */
     public function index()
     {
-        dump($this->serviceAuth->apititus());exit;
         return $this->renderApp('home/index.html.twig',[]);
     }
 
@@ -42,6 +45,18 @@ class HomeController extends AppController
     public function course()
     {
         return $this->renderApp('home/course.html.twig',[]);
+    }
+
+    /**
+     * Matches /docente exactly
+     *
+     * @Route("/docente", name="teacher")
+     */
+    public function teacher()
+    {
+        $parameters['cdn'] = $this->cdn;
+        return $this->renderAppSchool('home/teacher.html.twig', $parameters);
+
     }
 
 
