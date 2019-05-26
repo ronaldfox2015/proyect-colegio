@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Modern Business - Start Bootstrap Template</title>
+        <!-- Bootstrap core CSS -->
+        <link href="{{ absolute_url(asset('static/vendor/bootstrap/css/bootstrap.min.css')) }}" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="{{ absolute_url(asset('static/css/modern-business.css')) }}" rel="stylesheet">
+    </head>
+    <body>
+        {{ include('layouts/navigation-login.html.twig',  { 'parameters': parameters }) }}
+        {{ include( viewapp,  { 'parameters': parameters }) }}
+        {{ include('layouts/footer.html.twig',  { 'parameters': parameters }) }}
+        {{ include('layouts/modal.html.twig',  { 'parameters': parameters }) }}
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="{{ absolute_url(asset('static/vendor/jquery/jquery.min.js')) }}"></script>
+        <script src="{{ absolute_url(asset('static/vendor/bootstrap/js/bootstrap.bundle.min.js')) }}"></script>
+        {{ include('layouts/modal/login.html.twig',  { 'parameters': parameters }) }}
+    
+    </body>
+</html>
