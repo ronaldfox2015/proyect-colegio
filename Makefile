@@ -80,21 +80,15 @@ stop: ## inicializar proyecto: make stop
 	docker rm $(docker ps -a -q)
 
 up: ## inicialiar mysql y applicacion
-	make localhost;
+	make add-host;
 	@IMAGE_DEPLOY=$(IMAGE_DEPLOY) \
 	PROJECT_NAME=$(PROJECT_NAME) \
 	VIRTUAL_HOST=$(VIRTUAL_HOST) \
-	docker-compose -p $(PROJECT_NAME) up
+	docker-compose -p $(PROJECT_NAME) up;
 
 localhost: ## inicialiar mysql y applicacion
 	sudo cp $(PWD)/docker/php-apache/apache/hosts /etc/hosts;
 	echo "local.webcolegio.com";
-
-console: ## inicialiar mysql y applicacion
-	@IMAGE_DEPLOY=$(IMAGE_DEPLOY) \
-	PROJECT_NAME=$(PROJECT_NAME) \
-	VIRTUAL_HOST=$(VIRTUAL_HOST) \
-	docker-compose -p $(PROJECT_NAME) exec backend bash
 
 login: ## login de docker: make login
 	@docker login
@@ -102,6 +96,10 @@ login: ## login de docker: make login
 push: ## Subir imagen al dockerhub: make push
 	@make login
 	@docker push $(IMAGE_DEPLOY)
+
+add-host :## add-host: make add-host
+	sudo echo "127.0.0.1   local.webcolegio.com < /etc/hosts";
+
 
 help: ## ayuda: make help
 	@printf "\033[31m%-16s %-59s %s\033[0m\n" "Target" "Help" "Usage"; \
