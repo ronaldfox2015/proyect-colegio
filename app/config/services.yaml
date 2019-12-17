@@ -49,6 +49,8 @@ services:
 
 #    App\Repository\User\AuthRepository: ['@service.auth']
 
+    App\Common\Exception\ServiceException:
+
 
     App\Library\View\Cdn:
         class:  App\Library\View\Cdn

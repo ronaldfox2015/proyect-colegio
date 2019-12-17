@@ -22,7 +22,7 @@ class HomeController extends AppController
     }
 
     /**
-     * Matches /{schoolName} exactly
+     * Matches / exactly
      *
      * @Route("/", name="home")
      */
@@ -73,7 +73,7 @@ class HomeController extends AppController
     {
         $parameters['cdn'] = $this->cdn;
         $teacher = $this->session->get('auth');
-        return $this->renderAppSchool('home/student.html.twig', $parameters);
+        return $this->renderAppSchool('home/profile.html.twig', $parameters);
 
     }
 

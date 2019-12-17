@@ -1,4 +1,3 @@
-
 <div class="container">
     <!-- Page Heading/Breadcrumbs -->
     <h3 class="mt-4 mb-3 text-center">Portal del Alumno
@@ -9,7 +8,7 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Special title treatment</h5>
-                    <img src="{{ parameters.cdn.img('banner-login.jpg')}}" class="img-fluid" alt="Responsive image">
+                    <img src="{{ parameters.cdn.img('banner-login.jpg') }}" class="img-fluid" alt="Responsive image">
 
                 </div>
             </div>
@@ -18,26 +17,22 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Ingresa a tu cuenta</h5>
-                    <form >
+                    <form>
                         <div class="form-group">
                             <label for="exampleInputUser">Usuario</label>
-                            <input type="text" class="form-control" id="user" >
+                            <input type="text" class="form-control" id="user" name="user">
                             <small id="emailHelp" class="form-text text-muted">.
                             </small>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="pasword" placeholder="Password">
+                            <input type="password" class="form-control" id="password" name="password"
+                                   placeholder="Password">
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlSelect2">Rol</label>
-                            <select class="form-control" id="rol">
-                                <option value="0">Selecione</option>
-                                <option value="user-docente">Docente</option>
-                                <option value="user-coordinador">Coordinado</option>
-                            </select>
+                            <input type="hidden" name="rol" id="rol" value="admin"/>
                         </div>
-                        <button id="btn-login-teacher" type="button" class="btn btn-primary">Submit</button>
+                        <button id="btn-login-student" type="button" class="btn btn-primary">Submit</button>
 
                     </form>
                 </div>
@@ -46,25 +41,28 @@
     </div>
 
 </div>
-<script language = "javascript">
-   // $(document).ready(function(){
-   //      $("#btn-login-teacher").on("click", function(event){
-   //          $.ajax({
-   //              url:        '/user/login',
-   //              type:       'POST',
-   //              dataType:   'json',
-   //              async:      true,
-   //              data: {
-   //                  "parametro1": "valor1",
-   //                  "parametro2": "valor2"
-   //              },
-   //              success: function(data, status) {
-   //                  alert('se grabo correctamentea')
-   //              },
-   //              error : function(xhr, textStatus, errorThrown) {
-   //                  alert('Ajax request failed.');
-   //              }
-   //          });
-   //      });
-   // });
+<script language="javascript">
+    // $(document).ready(function () {
+    //     $("#btn-login-student").on("click", function (event) {
+
+    //
+    //         $.ajax({
+    //             url: '/user/login',
+    //             type: 'POST',
+    //             dataType: 'json',
+    //             async: true,
+    //             data: {
+    //                 "user": user,
+    //                 "password": password,
+    //                 "rol": rol
+    //             },
+    //             success: function (data, status) {
+    //                 console.log(data)
+    //             },
+    //             error: function (xhr, textStatus, errorThrown) {
+    //                 alert('Ajax request failed.');
+    //             }
+    //         });
+    //     });
+    // });
 </script>

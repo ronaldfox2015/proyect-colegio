@@ -15,7 +15,7 @@ parameters:
     adecsys_ws_log_stream: /logs/dev4c.api.aptitus.com/public/tmp/log/adecsys.log
     adecsys_ws_log_retention_days: 7
     secret: ThisTokenIsNotSoSecretChangeIt
-    ws_services: https://api.aptitus.com/
+    ws_services: http://192.168.1.60:8080
     servicio:
         base_uri: apirest:3000
         headers:

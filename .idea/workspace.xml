@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="186b5494-9820-4e85-9961-ad6bc2bc4039" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/templates/home/student.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Common/Exception/ServiceException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/StudentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Dto/Response.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/student/profile.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-proyect-colegio" beforeDir="false" afterPath="$PROJECT_DIR$/api-proyect-colegio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/parameters.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/parameters.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/ApiRestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/ApiRestController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Service/User/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Service/User/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/home/student.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/home/student.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,23 +36,6 @@
         <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>DocumentRoot</find>
-      <find>APACHE_RUN_DIR</find>
-      <find>apache</find>
-      <find>edit-report.html.twig</find>
-      <find>learning-workshop</find>
-      <find>DUMP_SERVER</find>
-      <find>APP_DEBUG</find>
-      <find>gu</find>
-      <find>get</find>
-      <find>cookie_secure</find>
-    </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/app/templates/control-follow-up</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -150,30 +147,42 @@
       <path value="$PROJECT_DIR$/app/vendor/composer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="205" />
-    <option name="y" value="75" />
-    <option name="width" value="1161" />
-    <option name="height" value="636" />
-  </component>
+  <component name="ProjectId" id="1V1I9WfZn2v0QmB9BwojYaWupaD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aptitus-api" />
+    <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
+    <property name="eu.ydp.idea.ts.spec.generator.settings.spec.template" value="import {$ClassName$} from '$TestsRelativePath$../src/$classRelativePath$/$ClassName$';&#10;&#10;describe('$ClassName$', () =&gt; {&#10;  let $ObjName$:$ClassName$;&#10;&#10;  beforeEach(() =&gt; {&#10;    $ObjName$ = new $ClassName$();&#10;  });&#10;&#10;  describe('', () =&gt; {&#10;    it('', () =&gt; {&#10;      // given&#10;&#10;      // when&#10;&#10;      // then&#10;    });&#10;  });&#10;});&#10;" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates/student" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/api-proyect-colegio/app/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/Dto" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/templates/student" />
       <recent name="$PROJECT_DIR$/app/templates/layouts" />
       <recent name="$PROJECT_DIR$/app/templates/home" />
       <recent name="$PROJECT_DIR$/app/templates/learning-workshop" />
       <recent name="$PROJECT_DIR$/app/templates/control-follow-up" />
-      <recent name="$PROJECT_DIR$/app/public" />
     </key>
   </component>
   <component name="RunManager">
@@ -221,11 +230,45 @@
       <workItem from="1558835566627" duration="19795000" />
       <workItem from="1558893411989" duration="7520000" />
       <workItem from="1558904925626" duration="4223000" />
+      <workItem from="1576414025444" duration="19241000" />
+      <workItem from="1576463440398" duration="3159000" />
+      <workItem from="1576549054761" duration="1368000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/api-proyect-colegio/app/node_modules/reflect-metadata/Reflect.js.map" />
+      </list>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2721" y="271" width="451" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1576450362868">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2721" y="271" width="451" height="562" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576450362868" />
+    <state x="2646" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1576460685670">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2646" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576460685670" />
+    <state x="2696" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576452391679">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2696" y="310" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576452391679" />
+    <state x="2608" y="366" width="681" height="373" key="NewPhpClassDialog" timestamp="1576455196276">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2608" y="366" width="681" height="373" key="NewPhpClassDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576455196276" />
+    <state x="2402" y="187" key="SettingsEditor" timestamp="1576465642831">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2402" y="187" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576465642831" />
+    <state x="2569" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576549073281">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2569" y="380" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576549073281" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

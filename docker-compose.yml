@@ -19,6 +19,8 @@ services:
         - 3306:3306
       volumes:
         - ./api-proyect-colegio/docker/mysql/sql:/docker-entrypoint-initdb.d
+        - ./api-proyect-colegio/docker/mysql/storage:/var/lib/mysql
+
       command: mysqld --sql_mode=""
   apirest:
     image: ronaldgcr/api-dev-node-colegio:0.0.1
