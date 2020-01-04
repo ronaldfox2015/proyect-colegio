@@ -16,16 +16,19 @@ body {
   border: 1px solid rgba(0,0,0,.125);
   color: #22599d;
 }
+
 .table-thead{
   color: #f2f2f3;
   background-color: #22599d;
 }
+
 .list-group-item.active {
   z-index: 2;
   color: #fff;
   background-color: #22599d;
   border-color: #22599d;
 }
+
 .carousel-item {
   height: 65vh;
   min-height: 300px;
@@ -39,6 +42,7 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
 .btn-primary {
   color: #fff;
   background-color: #22599d;
@@ -56,9 +60,16 @@ button .btn-primary{
   background-color: #22599d;
   border-color: #22599d;
 }
+
 .container-nav{
   margin-top: 13px;
 }
+
+.container-student{
+  padding-top: 30px;
+  max-width: 1140px;
+}
+
 footer{
   background-color:#225a9d!important;
 }

@@ -18,4 +18,8 @@ class Cdn
         return sprintf('%s/static/img/%s?v=%s', $this->base_url, $name, date('YmdHis'));
     }
 
+    public function static($name)
+    {
+        return sprintf('%sstatic/%s?v=%s', $this->base_url, $name, date('YmdHis'));
+    }
 }

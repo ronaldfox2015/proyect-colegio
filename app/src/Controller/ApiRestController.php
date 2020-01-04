@@ -3,16 +3,17 @@
 
 namespace App\Controller;
 
+use App\Library\View\User;
 use App\Service\User\Auth;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Component\HttpFoundation\Request;
 
-class ApiRestController extends AbstractController
+class ApiRestController extends Controller
 {
     public $serviceAuth;
     private $session;
@@ -28,7 +29,6 @@ class ApiRestController extends AbstractController
      * Matches /user/login exactly
      *
      * @Route("/user/login", name="user-login")
-     * @Method({"GET"})
      * @param Request $request
      */
     public function login(Request $request)
@@ -42,18 +42,21 @@ class ApiRestController extends AbstractController
             $this->session->set('auth', [
                 'user' => $userAuth['user']
             ]);
+
+
             return new JsonResponse([
                 'status' => $service->getStatus(),
-                'message' => 'Login correcto',
-                'url' => 'Login correcto'
-
+                'message' => $service->getMessage(),
+                'url' => User::redirect($userAuth['user']['roles']['slug'])
             ]);
         }
+        $response = [
+            'status' => $service->getCode(),
+            'message' => $service->getMessage()
+        ];
+        $request->headers->set('Content-Type', 'application/json');
 
-        return new JsonResponse([
-            'status' => 200,
-            'message' => 'Login correcto'
-        ]);
+        return new JsonResponse($response, $service->getCode());
 
     }
 

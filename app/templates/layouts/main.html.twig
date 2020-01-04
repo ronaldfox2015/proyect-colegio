@@ -7,9 +7,9 @@
         <meta name="author" content="">
         <title>Modern Business - Start Bootstrap Template</title>
         <!-- Bootstrap core CSS -->
-        <link href="{{ absolute_url(asset('static/vendor/bootstrap/css/bootstrap.min.css')) }}" rel="stylesheet">
+        <link href="{{ parameters.cdn.static('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
         <!-- Custom styles for this template -->
-        <link href="{{ absolute_url(asset('static/css/modern-business.css')) }}" rel="stylesheet">
+        <link href="{{ parameters.cdn.static('css/modern-business.css') }}" rel="stylesheet">
     </head>
     <body>
         {{ include('layouts/navigation.html.twig',  { 'parameters': parameters }) }}

@@ -5,17 +5,33 @@ namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use Symfony\Component\Routing\Annotation\Route;
 
 class AuthController extends AppController
 {
+    /** @var $session SessionInterface */
+    private $session;
+
     public function __construct(SessionInterface $session)
     {
-        $sessionAuth = $session->get('auth');
-        if (empty($sessionAuth)) {
-           // $baseUrl = $this->container->getParameter('base_url');
-                var_dump($this->container->get('aws_default_region'));
-            return $this->redirect('/', 301);
-
+        $this->session = $session->get('auth');
+        if (empty($this->session)) {
+            return $this->redirect($this->getParameter('base_url'), 301);
         }
+        parent::__construct($session);
+    }
+
+    /**
+     * Matches /close exactly
+     *
+     * @Route("/close", name="close")
+     * @param SessionInterface $session
+     */
+    public function close(SessionInterface $session)
+    {
+        $session->remove('auth');
+
+        return $this->redirect($this->getParameter('base_url'), 301);
+
     }
 }

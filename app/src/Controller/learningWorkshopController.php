@@ -3,10 +3,16 @@
 
 namespace App\Controller;
 
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
 class learningWorkshopController extends AppController
 {
+    public function __construct(SessionInterface $session)
+    {
+        parent::__construct($session);
+    }
+
     /**
      * Matches /taller exactly
      *

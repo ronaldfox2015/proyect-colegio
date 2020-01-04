@@ -33,9 +33,36 @@ class StudentController extends AuthController
     {
         $parameters['cdn'] = $this->cdn;
 
-        $teacher = $this->session->get('auth');
+        return $this->renderApp('student/profile.html.twig', $parameters);
 
-        return $this->renderAppSchool('student/profile.html.twig', $parameters);
+    }
+
+    /**
+     * Matches /alumno/cursos exactly
+     *
+     * @Route("/alumno/cursos", name="courses")
+     * @param Request $request
+     */
+    public function courses(Request $request)
+    {
+        $parameters['cdn'] = $this->cdn;
+
+
+        return $this->renderApp('student/courses.html.twig', $parameters);
+
+    }
+
+    /**
+     * Matches /alumno/notas exactly
+     *
+     * @Route("/alumno/notas", name="academic-qualification")
+     * @param Request $request
+     */
+    public function academicQualification(Request $request)
+    {
+        $parameters['cdn'] = $this->cdn;
+
+        return $this->renderApp('student/academic-qualification.html.twig', $parameters);
 
     }
 }

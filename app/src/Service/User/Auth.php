@@ -3,9 +3,14 @@
 namespace App\Service\User;
 
 use App\Dto\Response;
+use ErrorException;
 use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\BadResponseException;
+use GuzzleHttp\Exception\ServerException;
+use http\Exception\BadConversionException;
+use http\Exception\BadMessageException;
+use http\Exception\InvalidArgumentException;
 
 /**
  * Class Auth
@@ -42,11 +47,13 @@ class Auth extends Client
                 ]
             ]);
             $response = json_decode($result->getBody()->getContents(), true);
-            return new Response($result->getStatusCode(), $response, 'se grabo');
+            $message = !empty($message['message']) ? $message['message']:'';
+            return new Response($result->getStatusCode(), $response, $message);
 
         } catch (Exception $exception) {
-            throw new Exception($exception->getMessage());
+            return new Response(false, [], $exception->getMessage(), $exception->getCode());
+//            throw new ErrorException($exception->getMessage(),$exception->getCode());
         }
         return new Response();
+        }
     }
-}

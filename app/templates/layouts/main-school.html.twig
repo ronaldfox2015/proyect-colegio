@@ -21,7 +21,6 @@
         <script src="{{ absolute_url(asset('static/vendor/jquery/jquery.min.js')) }}"></script>
         <script src="{{ absolute_url(asset('static/vendor/bootstrap/js/bootstrap.bundle.min.js')) }}"></script>
 {#        {{ include('layouts/modal/login.html.twig',  { 'parameters': parameters }) }}#}
-        <script src="{{ absolute_url(asset('static/js/main.js')) }}"></script>
-
+        <script src="{{ parameters.cdn.static('js/main.js') }}"></script>
     </body>
 </html>
