@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="186b5494-9820-4e85-9961-ad6bc2bc4039" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/admin/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-proyect-colegio" beforeDir="false" afterPath="$PROJECT_DIR$/api-proyect-colegio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-proyect-colegio/app/somefile.log" beforeDir="false" afterPath="$PROJECT_DIR$/api-proyect-colegio/app/somefile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Controller/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/StudentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/student/courses.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/student/evaluation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/AppController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +152,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
     <property name="eu.ydp.idea.ts.spec.generator.settings.spec.template" value="import {$ClassName$} from '$TestsRelativePath$../src/$classRelativePath$/$ClassName$';&#10;&#10;describe('$ClassName$', () =&gt; {&#10;  let $ObjName$:$ClassName$;&#10;&#10;  beforeEach(() =&gt; {&#10;    $ObjName$ = new $ClassName$();&#10;  });&#10;&#10;  describe('', () =&gt; {&#10;    it('', () =&gt; {&#10;      // given&#10;&#10;      // when&#10;&#10;      // then&#10;    });&#10;  });&#10;});&#10;" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates/home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates/admin" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -167,11 +167,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/templates/admin" />
       <recent name="$PROJECT_DIR$/app/templates/home" />
       <recent name="$PROJECT_DIR$/app/templates/teacher" />
       <recent name="$PROJECT_DIR$/app/templates/control-follow-up" />
       <recent name="$PROJECT_DIR$/app/templates" />
-      <recent name="$PROJECT_DIR$/app/templates/student" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/Library/View" />
@@ -235,7 +235,7 @@
       <workItem from="1577540560051" duration="19019000" />
       <workItem from="1578146335183" duration="1627000" />
       <workItem from="1578167253149" duration="2964000" />
-      <workItem from="1578174717407" duration="17252000" />
+      <workItem from="1578174717407" duration="18580000" />
     </task>
     <servers />
   </component>
@@ -266,10 +266,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2721" y="271" width="441" height="562" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1577545833648" />
-    <state x="2646" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578251076158">
+    <state x="2646" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578257488996">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2646" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1578251076158" />
+    <state x="2646" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1578257488996" />
     <state x="2087" y="125" width="1653" height="855" key="DiffContextDialog" timestamp="1578235372285">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -278,10 +278,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2696" y="310" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1578173196140" />
-    <state x="3022" y="284" width="681" height="373" key="NewPhpClassDialog" timestamp="1578250953128">
+    <state x="3022" y="284" width="681" height="373" key="NewPhpClassDialog" timestamp="1578257461845">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="3022" y="284" width="681" height="373" key="NewPhpClassDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1578250953128" />
+    <state x="3022" y="284" width="681" height="373" key="NewPhpClassDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1578257461845" />
     <state x="2402" y="187" key="SettingsEditor" timestamp="1576465642831">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

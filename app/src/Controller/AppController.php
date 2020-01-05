@@ -48,8 +48,11 @@ class AppController extends Controller
 
     public function renderAppSchool($nameView, $parameters = [])
     {
+        $cdn = new Cdn($this->getParameter('base_url'));
         $parameters['isAuthStudent'] = '';
         $parameters['isAuthTeacher'] = '' ;
+        $parameters['cdn'] = $cdn;
+
         return $this->render('layouts/main-school.html.twig', [
             'viewapp' => $nameView,
             'parameters' => $parameters
