@@ -20,7 +20,7 @@ class learningWorkshopController extends AppController
      */
     public function index()
     {
-        return $this->renderApp('learning-workshop/index.html.twig',[]);
+        return $this->renderApp('learning-workshop/learning-workshop.html.twig',[]);
     }
 
 }

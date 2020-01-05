@@ -42,7 +42,7 @@ $(function() {
                 "rol": rol
             },
             success: function(data, status) {
-                if (status == 200) {
+                if (status) {
                     window.location.href = data.url;
                 }
             },

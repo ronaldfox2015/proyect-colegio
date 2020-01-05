@@ -6,7 +6,7 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
-class controlFollowUpController extends AppController
+class ControlFollowUpController extends AppController
 {
     public $activate;
 
@@ -24,7 +24,7 @@ class controlFollowUpController extends AppController
     public function index()
     {
 
-        return $this->renderApp('control-follow-up/index.html.twig',[
+        return $this->renderApp('control-follow-up/learning-workshop.html.twig',[
             'activate' => 'active'
         ]);
     }

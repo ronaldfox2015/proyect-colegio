@@ -14,7 +14,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                {% if parameters.isAuth %}
+                {% if parameters.isAuthStudent %}
                     <li class="nav-item">
                         <span class="nav-link" >{{ parameters.auth['user']['nick'] }}</span>
                     </li>
@@ -31,6 +31,22 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('close') }}">Salir</a>
                     </li>
+                {% elseif parameters.isAuthTeacher %}
+                    <li class="nav-item">
+                        <span class="nav-link" >{{ parameters.auth['user']['nick'] }}</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('teacher-profile') }}">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('evaluation') }}">Evaluacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('teacher-control-follow-u-list') }}">Seguimiento de control</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('close') }}">Salir</a>
+                    </li>
                 {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('home') }}">Home</a>
@@ -41,11 +57,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('student') }}">Alumno</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('control-follow-u-list') }}">Seguimiento de control</a>
-                    </li>
-                {% endif %}
 
+                {% endif %}
             </ul>
         </div>
     </div>
