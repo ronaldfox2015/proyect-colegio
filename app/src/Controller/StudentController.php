@@ -45,10 +45,9 @@ class StudentController extends AuthController
      */
     public function courses(Request $request)
     {
-        $parameters['cdn'] = $this->cdn;
 
 
-        return $this->renderApp('student/evaluation.html.twig', $parameters);
+        return $this->renderApp('student/evaluation.html.twig', []);
 
     }
 

@@ -2,56 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="186b5494-9820-4e85-9961-ad6bc2bc4039" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error.json.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error403.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error403.json.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error404.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error404.json.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Controller/ErrorController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Controller/ExceptionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Controller/TeacherController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/control-follow-up/learning-workshop.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/exception/error.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/exception/error403.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/home/learning-workshop.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/teacher/academic-qualification.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/teacher/control-follow-up.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/teacher/evaluation.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/teacher/learning-workshop.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/teacher/profile.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-proyect-colegio" beforeDir="false" afterPath="$PROJECT_DIR$/api-proyect-colegio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-proyect-colegio/app/somefile.log" beforeDir="false" afterPath="$PROJECT_DIR$/api-proyect-colegio/app/somefile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/sql/scheme.sql" beforeDir="false" afterPath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/sql/scheme.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/067dccf59dc8.pid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/11842ca6286d.pid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/3953b3f867b1.pid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/40f63546613f.pid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/6513cf30edc8.pid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/802db20d7ba3.pid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/90b14173bf5f.pid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/ib_logfile0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/ib_logfile1" beforeDir="false" afterPath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/ib_logfile1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/app/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Common/Exception/BodyRequestListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Common/Exception/BodyRequestListener.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Common/Exception/ServiceException.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Common/Exception/ServiceException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/AppController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Controller/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/AuthController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Controller/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/StudentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Controller/controlFollowUpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/ControlFollowUpController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Controller/learningWorkshopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/learningWorkshopController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Dto/Response.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Dto/Response.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Library/View/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Library/View/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/layouts/navigation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/navigation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/student/courses.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/student/evaluation.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +235,7 @@
       <workItem from="1577540560051" duration="19019000" />
       <workItem from="1578146335183" duration="1627000" />
       <workItem from="1578167253149" duration="2964000" />
-      <workItem from="1578174717407" duration="15738000" />
+      <workItem from="1578174717407" duration="17252000" />
     </task>
     <servers />
   </component>

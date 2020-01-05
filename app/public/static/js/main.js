@@ -22,7 +22,7 @@ $(function() {
             },
             error : function(xhr, textStatus, errorThrown) {
                 document.getElementById("Error").style.cssText = 'display: block;';
-                document.getElementById("Error").innerHTML = errorThrown;
+                document.getElementById("Error").innerHTML = 'login incorrecto'
             }
         });
     });
@@ -50,7 +50,7 @@ $(function() {
                 console.log(errorThrown);
                 console.log(xhr);
                 document.getElementById("Error").style.cssText = 'display: block;';
-                document.getElementById("Error").innerHTML = xhr.responseJSON.message;
+                document.getElementById("Error").innerHTML = 'login incorrecto'
             }
         });
     });
