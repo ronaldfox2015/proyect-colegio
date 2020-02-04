@@ -14,11 +14,13 @@ class AuthController extends AppController
 
     public function __construct(SessionInterface $session)
     {
+        parent::__construct($session);
         $this->session = $session->get('auth');
         if (empty($this->session)) {
+            var_dump($this->getParameter('base_url'));exit;
             return $this->redirect($this->getParameter('base_url'), 301);
         }
-        parent::__construct($session);
+        
     }
 
     /**
