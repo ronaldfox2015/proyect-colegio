@@ -51,8 +51,12 @@ services:
         class:  App\Service\User\Auth
         arguments: ['%servicio%']
         autowire: true
+    App\Library\View\Breadcrumb:
+        class:  App\Library\View\Breadcrumb
 
-#    App\Repository\User\AuthRepository: ['@service.auth']
+        autowire: true
+
+    #    App\Repository\User\AuthRepository: ['@service.auth']
 
     App\Common\Exception\ServiceException:
 

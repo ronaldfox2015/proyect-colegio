@@ -2,12 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="186b5494-9820-4e85-9961-ad6bc2bc4039" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/Controller/AdminController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/admin/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Library/View/Breadcrumb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/teacher/breadcrumb-teacher.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/teacher/courses.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/teacher/note-record.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-proyect-colegio" beforeDir="false" afterPath="$PROJECT_DIR$/api-proyect-colegio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-proyect-colegio/app/somefile.log" beforeDir="false" afterPath="$PROJECT_DIR$/api-proyect-colegio/app/somefile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/api-proyect-colegio/docker/mysql/storage/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/css/modern-business.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/static/css/modern-business.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/AppController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/StudentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/TeacherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/TeacherController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/admin/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/admin/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/layouts/main.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/main.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/layouts/navigation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/navigation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/teacher/evaluation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/teacher/reports.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -147,12 +163,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
     <property name="eu.ydp.idea.ts.spec.generator.settings.spec.template" value="import {$ClassName$} from '$TestsRelativePath$../src/$classRelativePath$/$ClassName$';&#10;&#10;describe('$ClassName$', () =&gt; {&#10;  let $ObjName$:$ClassName$;&#10;&#10;  beforeEach(() =&gt; {&#10;    $ObjName$ = new $ClassName$();&#10;  });&#10;&#10;  describe('', () =&gt; {&#10;    it('', () =&gt; {&#10;      // given&#10;&#10;      // when&#10;&#10;      // then&#10;    });&#10;  });&#10;});&#10;" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates/teacher" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -166,16 +183,16 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/api-proyect-colegio/app/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/templates/admin" />
-      <recent name="$PROJECT_DIR$/app/templates/home" />
-      <recent name="$PROJECT_DIR$/app/templates/teacher" />
-      <recent name="$PROJECT_DIR$/app/templates/control-follow-up" />
-      <recent name="$PROJECT_DIR$/app/templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/Library/View" />
       <recent name="$PROJECT_DIR$/app/src/Dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/templates/teacher" />
+      <recent name="$PROJECT_DIR$/app/templates/admin" />
+      <recent name="$PROJECT_DIR$/app/templates/home" />
+      <recent name="$PROJECT_DIR$/app/templates/control-follow-up" />
+      <recent name="$PROJECT_DIR$/app/templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -235,7 +252,14 @@
       <workItem from="1577540560051" duration="19019000" />
       <workItem from="1578146335183" duration="1627000" />
       <workItem from="1578167253149" duration="2964000" />
-      <workItem from="1578174717407" duration="18580000" />
+      <workItem from="1578174717407" duration="34180000" />
+      <workItem from="1578860011106" duration="8000" />
+      <workItem from="1579924413537" duration="56000" />
+      <workItem from="1581281617105" duration="3823000" />
+      <workItem from="1581398424569" duration="507000" />
+      <workItem from="1581872530796" duration="12801000" />
+      <workItem from="1582429176416" duration="561000" />
+      <workItem from="1582479092792" duration="9052000" />
     </task>
     <servers />
   </component>
@@ -266,38 +290,42 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2721" y="271" width="441" height="562" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1577545833648" />
-    <state x="2646" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578257488996">
+    <state x="2665" y="165" width="476" height="774" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581910879575">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2646" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1578257488996" />
+    <state x="2665" y="165" width="476" height="774" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1581910879575" />
+    <state x="2646" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582429380164">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2646" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1582429380164" />
     <state x="2087" y="125" width="1653" height="855" key="DiffContextDialog" timestamp="1578235372285">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2087" y="125" width="1653" height="855" key="DiffContextDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1578235372285" />
-    <state x="2696" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1578173196140">
+    <state x="2696" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579924468232">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2696" y="310" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1578173196140" />
-    <state x="3022" y="284" width="681" height="373" key="NewPhpClassDialog" timestamp="1578257461845">
+    <state x="2696" y="310" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1579924468232" />
+    <state x="3022" y="284" width="681" height="373" key="NewPhpClassDialog" timestamp="1581910853365">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="3022" y="284" width="681" height="373" key="NewPhpClassDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1578257461845" />
+    <state x="3022" y="284" width="681" height="373" key="NewPhpClassDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1581910853365" />
     <state x="2402" y="187" key="SettingsEditor" timestamp="1576465642831">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="187" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576465642831" />
-    <state x="2569" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1577195089833">
+    <state x="2569" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1582479518345">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2569" y="380" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1577195089833" />
-    <state x="2559" y="149" width="709" height="807" key="find.popup" timestamp="1578246924463">
+    <state x="2569" y="380" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1582479518345" />
+    <state x="2559" y="149" width="709" height="807" key="find.popup" timestamp="1582484743167">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2559" y="149" width="709" height="807" key="find.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1578246924463" />
-    <state x="2577" y="253" key="run.anything.popup" timestamp="1577575130125">
+    <state x="2559" y="149" width="709" height="807" key="find.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1582484743167" />
+    <state x="2577" y="253" key="run.anything.popup" timestamp="1582486980292">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2577" y="253" key="run.anything.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1577575130125" />
+    <state x="2577" y="253" key="run.anything.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1582486980292" />
     <state x="2577" y="198" width="672" height="676" key="search.everywhere.popup" timestamp="1578251111096">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -320,6 +348,11 @@
           <url>file://$PROJECT_DIR$/app/templates/student/academic-qualification.html.twig</url>
           <line>5</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/templates/layouts/navigation.html.twig</url>
+          <line>3</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app/public/static/js/contact_me.js</url>

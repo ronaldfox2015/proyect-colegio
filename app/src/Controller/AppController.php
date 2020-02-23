@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 
+use App\Library\View\Breadcrumb;
 use App\Library\View\Cdn;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
@@ -31,15 +32,35 @@ class AppController extends Controller
         $cdn = new Cdn($this->getParameter('base_url'));
         $parameters['cdn'] = $cdn;
         $parameters['isAuthStudent'] = '';
-        $parameters['isAuthTeacher'] = '' ;
-        if(!empty($this->session->get('auth'))){
+        $parameters['isAuthTeacher'] = false;
+        if (!isset($parameters['isTeacher'])) {
+            $parameters['isTeacher'] = false;
+        }
+
+        if (!isset($parameters['noteRecord'])) {
+            $parameters['noteRecord'] = false;
+        }
+        if (!isset($parameters['teacherCourses'])) {
+            $parameters['teacherCourses'] = false;
+        }
+        if (!isset($parameters['teacherControlFollowUList'])) {
+            $parameters['teacherControlFollowUList'] = false;
+        }
+        if (!isset($parameters['teacherReports'])) {
+            $parameters['teacherReports'] = false;
+        }
+        if (!isset($parameters['teacherControlFollowUList'])) {
+            $parameters['teacherControlFollowUList'] = false;
+        }
+
+        if (!empty($this->session->get('auth'))) {
+
             $session = $this->session->get('auth');
             $parameters['auth'] = $session;
             $parameters['isAuthStudent'] = $session['user']['roles']['slug'] == User::STUDENT;
             $parameters['isAuthTeacher'] = $session['user']['roles']['slug'] == User::TEACHER;
 
         }
-
         return $this->render('layouts/main.html.twig', [
             'viewapp' => $nameView,
             'parameters' => $parameters
@@ -50,7 +71,7 @@ class AppController extends Controller
     {
         $cdn = new Cdn($this->getParameter('base_url'));
         $parameters['isAuthStudent'] = '';
-        $parameters['isAuthTeacher'] = '' ;
+        $parameters['isAuthTeacher'] = '';
         $parameters['cdn'] = $cdn;
 
         return $this->render('layouts/main-school.html.twig', [

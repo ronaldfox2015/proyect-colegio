@@ -47,7 +47,7 @@ class StudentController extends AuthController
     {
 
 
-        return $this->renderApp('student/evaluation.html.twig', []);
+        return $this->renderApp('student/courses.html.twig', []);
 
     }
 

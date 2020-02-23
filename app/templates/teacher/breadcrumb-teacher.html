@@ -1,0 +1,46 @@
+<div class="container container container-site">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+
+            <li class="breadcrumb-item">
+                {% if  (parameters.noteRecord) %}
+                    Registro de notas
+                {% else %}
+                <a href="{{ url('note-record') }}">
+                    Registro de notas
+                </a>
+                {% endif %}
+
+
+            </li>
+            <li class="breadcrumb-item">
+                {% if  (parameters.teacherCourses) %}
+                    Cursos
+                {% else %}
+                <a href="{{ url('teacher-courses') }}">
+                    Cursos
+                </a>
+                {% endif %}
+            </li>
+            <li class="breadcrumb-item activate" aria-current="page">
+
+                {% if parameters.teacherReports %}
+                Informes
+                {% else %}
+                <a href="{{ url('teacher-reports') }}">
+                    Informes
+                </a>
+                {% endif %}
+            </li>
+            <li class="breadcrumb-item activate" aria-current="page">
+                {% if  (parameters.teacherControlFollowUList) %}
+                Seguimiento de Control
+                {% else %}
+                <a href="{{ url('teacher-control-follow-u-list') }}">
+                    Seguimiento de Control
+                </a>
+                {% endif %}
+            </li>
+        </ol>
+    </nav>
+</div>
